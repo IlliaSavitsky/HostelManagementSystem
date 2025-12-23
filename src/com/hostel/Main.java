@@ -1,7 +1,6 @@
 package com.hostel;
 
-import com.hostel.utils.FileManager;
-import com.hostel.utils.InputValidator;
+import com.hostel.utils.*;
 import com.hostel.model.*;
 import com.hostel.service.*;
 import java.util.Scanner;

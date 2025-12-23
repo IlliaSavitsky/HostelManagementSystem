@@ -307,6 +307,21 @@ public class AuthenticationMenu {
         }
     }
 
+
+    // Публічний метод з параметром Enum
+    public void performRegistration(UserType userType) {
+        switch (userType) {
+            case MANAGER:
+                performManagerRegistration();
+                break;
+            case CLIENT:
+                performClientRegistration();
+                break;
+            default:
+                System.out.println("Невідомий тип користувача");
+        }
+    }
+
     public boolean isAuthenticated() {
         return currentUser != null && authService.isUserAuthenticated();
     }
