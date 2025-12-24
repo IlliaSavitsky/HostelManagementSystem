@@ -416,7 +416,7 @@ public class Main {
         switch (choice) {
             case "1" -> {
                 // Викликаємо метод реєстрації клієнта з AuthenticationMenu
-                authMenu.performClientRegistration();
+                authMenu.authenticateClient();
                 if (authMenu.getCurrentUser() != null) {
                     currentUser = authMenu.getCurrentUser();
                     isAnonymousMode = false;
@@ -424,7 +424,7 @@ public class Main {
             }
             case "2" -> {
                 // Викликаємо метод реєстрації менеджера з AuthenticationMenu
-                authMenu.performManagerRegistration();
+                authMenu.authenticateManager();
                 if (authMenu.getCurrentUser() != null) {
                     currentUser = authMenu.getCurrentUser();
                     isAnonymousMode = false;
